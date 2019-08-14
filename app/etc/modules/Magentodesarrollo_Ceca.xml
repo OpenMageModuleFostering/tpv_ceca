@@ -1,0 +1,11 @@
+<config>
+	<modules>
+		<Magentodesarrollo_Ceca>
+			<active>true</active>
+			<codePool>community</codePool>
+			<depends>
+				<Mage_Payment/>
+			</depends>
+		</Magentodesarrollo_Ceca>
+	</modules>
+</config>

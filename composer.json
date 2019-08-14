@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Tpv_Ceca",
+    "type": "magento-module",
+    "license": "GPL",
+    "homepage": "",
+    "description": "Pasarela bancaria de Ceca",
+    "authors": [
+    {
+        "name": "Magento Desarrollo",
+        "email": "magentodesarrollo@brokerfashion.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

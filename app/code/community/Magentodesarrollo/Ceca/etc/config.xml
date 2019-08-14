@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Magentodesarrollo_Ceca>
+			<version>0.1.0</version>
+		</Magentodesarrollo_Ceca>
+	</modules>
+	<frontend>
+        <routers>
+            <ceca>
+                <use>standard</use>
+                <args>
+                    <module>Magentodesarrollo_Ceca</module>
+                    <frontName>ceca</frontName>
+                </args>
+            </ceca>
+        </routers>
+	</frontend>
+	<global>
+		<models>
+			<ceca>
+				<class>Magentodesarrollo_Ceca_Model</class>
+			</ceca>
+		</models>
+	</global>
+	<default>
+		<payment>
+			<ceca>
+				<active>1</active>
+			<!-- model to handle logic for this payment method -->
+				<model>ceca/paymentmethod</model>
+			<!-- order status for new orders paid by this payment method -->
+				<order_status>pending</order_status>
+			<!-- default title for payment checkout page and order view page -->
+				<title>TPV Ceca</title>
+				<allowspecific>0</allowspecific>
+				<payment_action>authorize</payment_action><!--payment_action>authorize_capture</payment_action-->
+			</ceca>
+		</payment>
+	</default>
+</config>

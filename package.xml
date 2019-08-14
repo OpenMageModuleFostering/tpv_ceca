@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Tpv_Ceca</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>GPL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Pasarela bancaria de Ceca</summary>
+    <description>Modulo para redirigir una compra a la pasarela bancaria de ceca.</description>
+    <notes>testing</notes>
+    <authors><author><name>Magento Desarrollo</name><user>magentobk1</user><email>magentodesarrollo@brokerfashion.com</email></author></authors>
+    <date>2015-07-03</date>
+    <time>15:04:11</time>
+    <contents><target name="magecommunity"><dir name="Magentodesarrollo"><dir name="Ceca"><dir name="Helper"><file name="Data.php" hash="9f56090ba09c144d5330d1a3bc88f880"/></dir><dir name="Model"><file name="Paymentmethod.php" hash="e1600e8831b5133c9aab95f1bfeb78e5"/></dir><dir name="controllers"><file name="PaymentController.php" hash="dcbc5a2b282f26fbd39464d776ff48a9"/></dir><dir name="etc"><file name="config.xml" hash="b7041c2c6353902925ecd83c47322917"/><file name="system.xml" hash="82f2a7bfea20c990e9d1ed724eed6fbb"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Magentodesarrollo_Ceca.xml" hash="427d8c952d6408e5ef49721855a57175"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.4.36</min><max>6.0.0</max></php></required></dependencies>
+</package>
