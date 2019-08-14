@@ -64,7 +64,6 @@ class Magentodesarrollo_Ceca_PaymentController extends Mage_Core_Controller_Fron
 	}
 	
 	public function responseAction() {
-		//Mage::log($_POST);
 			// Recogemos datos de respuesta
 			$clave     = Mage::getStoreConfig('payment/ceca/clave_encriptacion');
 			$total     = $_POST["Importe"];

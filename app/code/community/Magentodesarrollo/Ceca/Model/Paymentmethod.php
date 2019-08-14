@@ -91,7 +91,7 @@ class Magentodesarrollo_Ceca_Model_Paymentmethod extends Mage_Payment_Model_Meth
 				->getFirstItem();
 		
 		$transId=$invoice->getTransactionId();
-		$url = (Mage::getStoreConfig('payment/ceca/produccion')?'https://pgw.ceca.es/cgi-bin/tpvanular':'http://tpv.ceca.es:8000/cgi-bin/tpvanular');
+		$url = (Mage::getStoreConfig('payment/ceca/produccion')?'https://pgw.ceca.es/cgi-bin/tpvanularparcialmente':'http://tpv.ceca.es:8000/cgi-bin/tpvanularparcialmente');
 		$clave=Mage::getStoreConfig('payment/ceca/clave_encriptacion');
 		$merchant=Mage::getStoreConfig('payment/ceca/merchant_id');
 		$acquirer=Mage::getStoreConfig('payment/ceca/acquirer_bin');
@@ -127,7 +127,7 @@ class Magentodesarrollo_Ceca_Model_Paymentmethod extends Mage_Payment_Model_Meth
 		$result = curl_exec($ch);
 		Mage::log($result,null,'serversidevalidation.log');
 		$resok = preg_replace("/<.*?>/", "", $result);
-		$resok = preg_match("/400/", $resok);
+		$resok = preg_match("/900/", $resok);
 		if(!$resok){
 			$resko = preg_replace("/[\n|\r]/", "", $result);
 			$resko = preg_replace("/<SCRIPT.*<\/SCRIPT>/", "", $resko);

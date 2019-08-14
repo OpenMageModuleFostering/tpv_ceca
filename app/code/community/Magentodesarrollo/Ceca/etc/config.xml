@@ -2,7 +2,7 @@
 <config>
 	<modules>
 		<Magentodesarrollo_Ceca>
-			<version>0.1.0</version>
+			<version>1.0.1</version>
 		</Magentodesarrollo_Ceca>
 	</modules>
 	<frontend>
@@ -26,7 +26,7 @@
 	<default>
 		<payment>
 			<ceca>
-				<active>1</active>
+				<active>0</active>
 			<!-- model to handle logic for this payment method -->
 				<model>ceca/paymentmethod</model>
 			<!-- order status for new orders paid by this payment method -->
